@@ -12,14 +12,15 @@ class CashbackHackServiceTest {
         int expected = 10;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
+
     @Test
     void remainIsZero() {
         int amount = 2000;
         int expected = 0;
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 }
